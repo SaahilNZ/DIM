@@ -1,5 +1,7 @@
 # Next
 
+* Add the ability to search for items by their item instance id
+
 # 5.8.2 (2019-01-01)
 
 * Make it easier to swipe away the item popup on Android.

@@ -210,6 +210,7 @@
       "Item": "Items that are exchangeable with Rahool for 200 glimmer."
     },
     "HasShader": "Shows items that have a shader applied.",
+    "ID": "Shows items based on their item instance ID.",
     "InLoadout": "Shows items that are included in any loadout.",
     "Infusable": "Shows items that can be infused.",
     "Leveling": {

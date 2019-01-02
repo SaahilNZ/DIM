@@ -766,6 +766,9 @@ function searchFilters(
             const filter = pieces[1];
             addPredicate(filter, pieces[2]);
           }
+        } else if (term.startsWith('id:')) {
+          const filter = term.replace('id:', '');
+          addPredicate('id', filter, invert);
         } else if (term.startsWith('source:')) {
           const filter = term.replace('source:', '');
           addPredicate('source', filter, invert);
@@ -819,6 +822,9 @@ function searchFilters(
           yellow: 'exotic'
         };
         return item.tier.toLowerCase() === (tierMap[predicate] || predicate);
+      },
+      id(item: DimItem, predicate: string) {
+        return item.id === predicate;
       },
       sublime(item: DimItem) {
         const sublimeEngrams = [
